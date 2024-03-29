@@ -1,5 +1,5 @@
 // slider data/photos
-
+"use strict";
 let data = [
     {
         id: 1,
@@ -194,3 +194,14 @@ document.getElementById('ul-list').innerHTML = ' ';
     });
 
 getUsers(currentPage);
+
+function toggleMenu() {
+    const nav = document.querySelector('.navbar ul');
+    const burger = document.querySelector('.burger');
+
+    // Toggle Nav
+    nav.classList.toggle('nav-active');
+
+    // Burger Animation
+    burger.classList.toggle('toggle');
+}

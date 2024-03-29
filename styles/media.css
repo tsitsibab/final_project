@@ -1,0 +1,109 @@
+/* Media query for screens smaller than 768px */
+@media screen and (max-width: 767px) {
+    .nutTitle {
+        margin-left: 20px;
+        font-size: 3rem;
+    }
+
+    .header .navbar {
+        display: none;
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        background-color: navy;
+        top: 0;
+        left: 0;
+        z-index: 99;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transform: translateY(-100%);
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .header .navbar.active {
+        transform: translateY(0);
+    }
+
+    .header .navbar ul {
+        margin-top: 50px;
+        flex-direction: column;
+    }
+
+    .header .navbar a {
+        margin: 20px;
+        font-size: 25px;
+        color: bisque;
+    }
+}
+
+/* Media query for screens smaller than 576px */
+@media screen and (max-width: 575px) {
+    .nutTitle {
+        margin-left: 10px;
+        font-size: 2.5rem;
+    }
+
+    .header .navbar {
+        padding: 10px;
+    }
+
+    .header .navbar a {
+        margin: 10px;
+        font-size: 20px;
+    }
+
+    .about .row {
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    }
+
+    .about .row .image img {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .about .row .content p {
+        width: 100%;
+    }
+
+    .Products .box-container {
+        grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    }
+
+    .Products .box-container .box {
+        padding: 2rem;
+    }
+
+    .contact .wraper-contact {
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    }
+
+    .contact .wraper-contact .right-contact-block {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .div2 {
+        width: 80vw;
+        height: auto;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .footer-wrapper {
+        height: auto;
+    }
+
+    .footer-wrapper .contaier {
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    }
+
+    .footer-wrapper .contaier .box-1,
+    .footer-wrapper .contaier .box-footer,
+    .footer-wrapper .contaier .box-3 {
+        margin-top: 30px;
+    }
+}
